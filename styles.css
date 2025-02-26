@@ -617,6 +617,7 @@ body {
         font-size: 2.5rem;
         top: -60px;
         width: 100vw;
+        margin-left: -59px;
     }
 
     .hero h1 {
@@ -1485,6 +1486,8 @@ section {
 
     .developer-title .title {
         font-size: 1rem;
+      
+       
     }
 }
 
@@ -1691,6 +1694,10 @@ section {
 
     .submit-button {
         width: 100%;
+    }
+    .developer-title {
+        font-size: 1.5rem;
+      
     }
 }
 
