@@ -558,12 +558,62 @@ body {
     }
 
     .sidebar {
-        left: 0;
-        top: 0;
-        bottom: 0;
-        border-radius: 0 20px 20px 0;
         transform: translateX(-100%);
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 250px;
+        z-index: 1000;
+        background: var(--two-color);
         transition: transform 0.3s ease-in-out;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+        padding: 2rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile-section {
+        margin-bottom: 1.5rem;
+    }
+
+    .profile-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .profile-name {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .profile-subtitle {
+        font-size: 0.8rem;
+    }
+
+    .nav-links {
+        margin-top: 1.5rem;
+    }
+
+    .nav-links li {
+        margin-bottom: 0.8rem;
+    }
+
+    .nav-links a {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .social-links {
+        margin-top: auto;
+        padding: 0.5rem;
+        gap: 1rem;
+    }
+
+    .social-links a {
+        font-size: 1rem;
+        padding: 6px;
     }
 
     .sidebar.active {
@@ -645,7 +695,7 @@ body {
         height: 100vh;
         width: 250px;
         z-index: 1000;
-        background-color: var(--sidebar-bg);
+        background: var(--two-color);
         transition: transform 0.3s ease-in-out;
         box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
     }
@@ -2111,5 +2161,44 @@ section {
 
     .timeline-content {
         padding: 1rem;
+    }
+}
+
+/* Additional adjustments for very small screens */
+@media (max-width: 480px) {
+    .sidebar {
+        width: 240px;
+        padding: 1.5rem 1rem;
+    }
+
+    .profile-image {
+        width: 70px;
+        height: 70px;
+    }
+
+    .profile-name {
+        font-size: 1.1rem;
+    }
+
+    .nav-links a {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.85rem;
+    }
+}
+
+/* Adjust for different height screens */
+@media (max-height: 700px) {
+    .sidebar {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .profile-image {
+        width: 60px;
+        height: 60px;
+    }
+
+    .nav-links li {
+        margin-bottom: 0.5rem;
     }
 }
