@@ -111,10 +111,15 @@ const projectData = {
         github: "https://github.com/username/education-platform"
     },
     5: {
-        title: "Araba Kiralama Sistemi",
-        description: "Araba kiralama sistemi, kullanıcıların araba kiralama hizmeti almalarını sağlayan bir platformdur. Bu sistem, kullanıcıların araba kiralama taleplerini göndermelerine olanak tanırken, işletmelerin ise müşteri taleplerini daha iyi yönetmelerine olanak tanır.",
+        title: "Mağaza Ürün Otomasyonu",
+        description: "Mağazalar için stok takibi, ürün yönetimi ve satış süreçlerini optimize eden kapsamlı bir otomasyon sistemi, Barkodlu satış yapılan bir otomasyon sistemidir.",
         images: [
             "assets/images/project55.png",
+            "assets/images/project5-1.png",
+            "assets/images/project5-2.png",
+            "assets/images/project5-3.png",
+            "assets/images/project5-4.png",
+
             
         ],
         tech: ["React", ".Net", "MSSQL", "Redis", "Docker"],
