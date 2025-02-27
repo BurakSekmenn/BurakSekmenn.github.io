@@ -94,7 +94,7 @@ const projectData = {
         ],
         tech: ["React", ".Net", "MSSQL", "Redis", "Docker"],
         demo: "https://github.com/BurakSekmenn",
-        github: "https://github.com/username/education-platform"
+        github: "https://github.com/BurakSekmenn"
     },
     4: {
         title: "Mağaza Ürün Otomasyonu",
@@ -108,7 +108,7 @@ const projectData = {
         ],
         tech: ["WPF", "C#", "SQLLite", "Barkod"],
         demo: "https://github.com/BurakSekmenn",
-        github: "https://github.com/username/education-platform"
+        github: "https://github.com/BurakSekmenn"
     },
     5: {
         title: "Mağaza Ürün Otomasyonu",
@@ -124,7 +124,7 @@ const projectData = {
         ],
         tech: ["React", ".Net", "MSSQL", "Redis", "Docker"],
         demo: "https://github.com/BurakSekmenn",
-        github: "https://github.com/username/education-platform"
+        github: "https://github.com/BurakSekmenn"
     },
     6: {
         title: "Kişsel Web Sitesi",
@@ -135,7 +135,7 @@ const projectData = {
         ],
         tech: ["Wordpress", "PHP", "MSSQL"],
         demo: "https://github.com/BurakSekmenn",
-        github: "https://github.com/username/education-platform"
+        github: "https://github.com/BurakSekmenn"
     }
 };
 
