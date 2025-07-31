@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Burak Sekmen - Full Stack Developer | Yazılım Geliştirici</title>
-    <meta name="description" content="Burak Sekmen'in resmi portföy sitesi. Full Stack Developer olarak modern web ve mobil uygulamalar geliştiriyorum. ASP.NET, React Native, Node.js ve veritabanı yönetimi konularında uzmanım.">
-    <meta name="keywords" content="Full Stack Developer, Yazılım Geliştirici, Web Geliştirme, Mobil Uygulamalar, ASP.NET Core, React Native, Node.js, MySQL, MongoDB, Burak Sekmen">
+    <meta name="description"
+        content="Burak Sekmen'in resmi portföy sitesi. Full Stack Developer olarak modern web ve mobil uygulamalar geliştiriyorum. ASP.NET, React Native, Node.js ve veritabanı yönetimi konularında uzmanım.">
+    <meta name="keywords"
+        content="Full Stack Developer, Yazılım Geliştirici, Web Geliştirme, Mobil Uygulamalar, ASP.NET Core, React Native, Node.js, MySQL, MongoDB, Burak Sekmen">
     <meta name="author" content="Burak Sekmen">
     <meta property="og:title" content="Burak Sekmen - Full Stack Developer">
-    <meta property="og:description" content="Modern web ve mobil uygulamalar geliştiren yazılım geliştirici. ASP.NET Core, React Native, Node.js, MySQL ve MongoDB konularında uzmanım.">
+    <meta property="og:description"
+        content="Modern web ve mobil uygulamalar geliştiren yazılım geliştirici. ASP.NET Core, React Native, Node.js, MySQL ve MongoDB konularında uzmanım.">
 
     <link rel="stylesheet" href="styles.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
     <!-- Theme Toggle Button -->
     <div class="theme-toggle fixed">
@@ -57,6 +62,9 @@
     <main class="main-content">
         <!-- Hero Section -->
         <section id="home" class="hero">
+            <!-- Interactive Particles Canvas -->
+            <canvas id="particlesCanvas" class="particles-canvas"></canvas>
+            
             <div class="shapes">
                 <div class="shape shape1"></div>
                 <div class="shape shape2"></div>
@@ -64,7 +72,42 @@
                 <div class="shape shape4"></div>
                 <div class="shape shape5"></div>
                 <div class="shape shape6"></div>
-                
+            </div>
+            
+            <!-- Animated Tech Icons -->
+            <div class="tech-icons">
+                <div class="tech-icon icon1" data-tech=".NET">
+                    <i class="fab fa-microsoft"></i>
+                    <span class="tech-label">.NET</span>
+                </div>
+                <div class="tech-icon icon2" data-tech="React">
+                    <i class="fab fa-react"></i>
+                    <span class="tech-label">React</span>
+                </div>
+                <div class="tech-icon icon3" data-tech="JavaScript">
+                    <i class="fab fa-js-square"></i>
+                    <span class="tech-label">JavaScript</span>
+                </div>
+                <div class="tech-icon icon4" data-tech="Node.js">
+                    <i class="fab fa-node-js"></i>
+                    <span class="tech-label">Node.js</span>
+                </div>
+                <div class="tech-icon icon5" data-tech="Database">
+                    <i class="fas fa-database"></i>
+                    <span class="tech-label">Database</span>
+                </div>
+                <div class="tech-icon icon6" data-tech="Docker">
+                    <i class="fab fa-docker"></i>
+                    <span class="tech-label">Docker</span>
+                </div>
+                <div class="tech-icon icon7" data-tech="Git">
+                    <i class="fab fa-git-alt"></i>
+                    <span class="tech-label">Git</span>
+                </div>
+                <div class="tech-icon icon8" data-tech="API">
+                    <i class="fas fa-code"></i>
+                    <span class="tech-label">API</span>
+                </div>
             </div>
             <div class="hero-content">
                 <div class="hero-left">
@@ -74,7 +117,8 @@
                         <div class="developer-title" id="developerTitle">
                             <span class="title">FULL STACK DEVELOPER</span>
                         </div>
-                        <p class="description">Tutkuyla kod yazan bir geliştirici; basitliği benimser, temiz ve verimli çözümler üretir, her satır kodu özenle işler. </p>
+                        <p class="description">Tutkuyla kod yazan bir geliştirici; basitliği benimser, temiz ve verimli
+                            çözümler üretir, her satır kodu özenle işler. </p>
                         <div class="hero-buttons">
                             <a href="#contact" class="primary-btn">İletişime Geç </a>
                             <a href="#projects" class="secondary-btn">Projelerim </a>
@@ -98,13 +142,23 @@
             <h2 class="section-title">Hakkımda</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Merhaba, ben Burak Sekmen. Antalya'da yaşıyorum ve Akdeniz Üniversitesi'nde eğitimime devam ediyorum. Yaklaşık 5-6 yıldır yazılım geliştirme ile ilgileniyorum ve özellikle .NET ekosistemi üzerine yoğunlaşıyorum.<br>
+                    <p>Merhaba, ben Burak Sekmen. Antalya'da yaşıyorum ve Akdeniz Üniversitesi'nde eğitimime devam
+                        ediyorum. Yaklaşık 5-6 yıldır yazılım geliştirme ile ilgileniyorum ve özellikle .NET ekosistemi
+                        üzerine yoğunlaşıyorum.<br>
 
-                        C#, .NET Core, ASP.NET Core (MVC/Web API), Entity Framework Core, LINQ, SQL Server, MongoDB, RabbitMQ, Redis, Docker, SignalR ve IdentityServer4 gibi teknolojilerle çalışıyorum.<br> Yazılım mimarisi alanında Design Patterns, SOLID prensipleri ve mikro servis mimarileri üzerine araştırmalar yapıyor ve projeler geliştiriyorum.<br>
-                        
-                        Gerçek zamanlı sistemler, ölçeklenebilir mimariler ve güvenli API geliştirme konularında deneyim sahibiyim.<br> CI/CD süreçleri, Unit Test uygulamaları ve konteyner tabanlı geliştirme yaklaşımlarını aktif olarak kullanıyor, modern yazılım geliştirme prensiplerini projelerime entegre ediyorum.<br>
-                        
-                        Yeni teknolojileri öğrenmeye, mevcut bilgi birikimimi sürekli geliştirmeye ve bunları projelerime uygulamaya büyük önem veriyorum. <br>Aynı zamanda yazılım topluluklarıyla bilgi paylaşımında bulunarak sektördeki en iyi uygulamaları takip ediyorum.</p>
+                        C#, .NET Core, ASP.NET Core (MVC/Web API), Entity Framework Core, LINQ, SQL Server, MongoDB,
+                        RabbitMQ, Redis, Docker, SignalR ve IdentityServer4 gibi teknolojilerle çalışıyorum.<br> Yazılım
+                        mimarisi alanında Design Patterns, SOLID prensipleri ve mikro servis mimarileri üzerine
+                        araştırmalar yapıyor ve projeler geliştiriyorum.<br>
+
+                        Gerçek zamanlı sistemler, ölçeklenebilir mimariler ve güvenli API geliştirme konularında deneyim
+                        sahibiyim.<br> CI/CD süreçleri, Unit Test uygulamaları ve konteyner tabanlı geliştirme
+                        yaklaşımlarını aktif olarak kullanıyor, modern yazılım geliştirme prensiplerini projelerime
+                        entegre ediyorum.<br>
+
+                        Yeni teknolojileri öğrenmeye, mevcut bilgi birikimimi sürekli geliştirmeye ve bunları
+                        projelerime uygulamaya büyük önem veriyorum. <br>Aynı zamanda yazılım topluluklarıyla bilgi
+                        paylaşımında bulunarak sektördeki en iyi uygulamaları takip ediyorum.</p>
                 </div>
             </div>
         </section>
@@ -121,8 +175,11 @@
                             <div class="timeline-content">
                                 <h4>Full Stack Developer</h4>
                                 <p class="timeline-company">Freelancer</p>
-                                <p class="timeline-description">Çeşitli sektörlerde müşterilere özel web uygulamaları geliştirme, ölçeklenebilir API tasarımı, mikroservis mimarisi ile dağıtık sistemler oluşturma ve performans optimizasyonu konularında çalışmalar gerçekleştirdim.  
-                                    .NET Core ve React kullanarak tam stack projeler geliştirdim, ayrıca Redis ve RabbitMQ gibi teknolojilerle cache ve mesaj kuyruğu yapılarını entegre ettim.</p>
+                                <p class="timeline-description">Çeşitli sektörlerde müşterilere özel web uygulamaları
+                                    geliştirme, ölçeklenebilir API tasarımı, mikroservis mimarisi ile dağıtık sistemler
+                                    oluşturma ve performans optimizasyonu konularında çalışmalar gerçekleştirdim.
+                                    .NET Core ve React kullanarak tam stack projeler geliştirdim, ayrıca Redis ve
+                                    RabbitMQ gibi teknolojilerle cache ve mesaj kuyruğu yapılarını entegre ettim.</p>
                                 <div class="timeline-tags">
                                     <span>.NET Core</span>
                                     <span>React</span>
@@ -137,7 +194,8 @@
                             <div class="timeline-content">
                                 <h4>Full Stack Developer</h4>
                                 <p class="timeline-company">Phd Teknoloji</p>
-                                <p class="timeline-description">Web uygulamaları geliştirme, API tasarımı ve mikroservis mimarisi üzerine çalışmalar.</p>
+                                <p class="timeline-description">Web uygulamaları geliştirme, API tasarımı ve mikroservis
+                                    mimarisi üzerine çalışmalar.</p>
                                 <div class="timeline-tags">
                                     <span>.NET Core</span>
                                     <span>React</span>
@@ -150,7 +208,8 @@
                             <div class="timeline-content">
                                 <h4>Backend Developer</h4>
                                 <p class="timeline-company">Adalya Market Yazılım</p>
-                                <p class="timeline-description">Backend sistemleri geliştirme ve veritabanı yönetimi.</p>
+                                <p class="timeline-description">Backend sistemleri geliştirme ve veritabanı yönetimi.
+                                </p>
                                 <div class="timeline-tags">
                                     <span>C#</span>
                                     <span>SQL</span>
@@ -159,7 +218,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Education -->
                     <div class="timeline-block">
                         <h3 class="timeline-subtitle">Eğitim</h3>
@@ -168,7 +227,8 @@
                             <div class="timeline-content">
                                 <h4>Bilgisayar Programcılığı - Yüksek Onur Öğrencisi</h4>
                                 <p class="timeline-company">Akdeniz Üniversitesi</p>
-                                <p class="timeline-description">Yazılım geliştirme, algoritma analizi ve sistem tasarımı üzerine eğitim.</p>
+                                <p class="timeline-description">Yazılım geliştirme, algoritma analizi ve sistem tasarımı
+                                    üzerine eğitim.</p>
                                 <div class="timeline-tags">
                                     <span>Algoritma</span>
                                     <span>Veri Yapıları</span>
@@ -203,8 +263,8 @@
                     </div>
                     <h3>Backend Development</h3>
                     <div class="skill-tags">
-                    
-                        
+
+
                         <span class="skill-tag">.NET Core</span>
                         <span class="skill-tag">Express</span>
                         <span class="skill-tag">REST API</span>
@@ -224,7 +284,7 @@
                         <span class="skill-tag">MongoDB</span>
                         <span class="skill-tag">Redis</span>
                         <span class="skill-tag">MS SQL</span>
-                 
+
                         <span class="skill-tag">Entity Framework</span>
                     </div>
                 </div>
@@ -242,7 +302,7 @@
                         <span class="skill-tag">Hangfire Jobs</span>
                     </div>
                 </div>
-                
+
                 <div class="skill-card">
                     <div class="skill-icon">
                         <i class="fas fa-layer-group"></i>
@@ -275,14 +335,55 @@
 
         <!-- Projects Section -->
         <section id="projects" class="projects">
-            <h2 class="section-title">Projelerim</h2>
+            <div class="projects-header">
+                <h2 class="section-title">Projelerim</h2>
+                <p class="projects-subtitle">Geliştirdiğim projeler ve çözümler</p>
+            </div>
+            
+            <!-- Featured Project -->
+            <div class="featured-project" onclick="openModal(1)">
+                <div class="featured-image">
+                    <img src="assets/images/project1.png" alt="Featured Project">
+                    <div class="featured-badge">
+                        <i class="fas fa-star"></i>
+                        <span>Öne Çıkan</span>
+                    </div>
+                </div>
+                <div class="featured-content">
+                    <div class="featured-category">Web Uygulaması</div>
+                    <h3 class="featured-title">Rezervasyon Sistemi</h3>
+                    <p class="featured-description">Kullanıcıların belirli tarihlerde ve saatlerde hizmet almalarını sağlayan kapsamlı bir platform. Modern UI/UX tasarımı ile geliştirilmiş, ölçeklenebilir mimari yapısına sahip.</p>
+                    <div class="featured-tech">
+                        <span class="tech-tag">.NET Core</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Redis</span>
+                    </div>
+                    <div class="featured-stats">
+                        <div class="stat">
+                            <i class="fas fa-code"></i>
+                            <span>15K+ Lines</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-users"></i>
+                            <span>500+ Users</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-clock"></i>
+                            <span>3 Months</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="projects-grid">
                 <div class="project-card" onclick="openModal(1)">
                     <div class="project-image">
                         <img src="assets/images/project1.png" alt="E-Ticaret Projesi">
                         <div class="project-overlay">
                             <h3 class="project-title">Rezervasyon Sistemi</h3>
-                            <p class="project-description">Kullanıcıların belirli tarihlerde ve saatlerde hizmet almalarını sağlayan bir platformdur.</p>
+                            <p class="project-description">Kullanıcıların belirli tarihlerde ve saatlerde hizmet
+                                almalarını sağlayan bir platformdur.</p>
                             <div class="project-tech">
                                 <span>.Net</span> • <span>Css</span> • <span>Mysql</span>
                             </div>
@@ -293,84 +394,124 @@
                         </div>
                     </div>
                 </div>
-                
-                <div class="project-card" onclick="openModal(2)">
+
+                <div class="project-card modern-card" onclick="openModal(2)">
                     <div class="project-image">
-                        <img src="assets/images/project2.png" alt="Fitness App">
-                        <div class="project-overlay">
-                            <h3 class="project-title">Araç Takip Uygulaması</h3>
-                            <p class="project-description">Tek Bir platformda tüm araçlarınızı takip edin.</p>
-                            <div class="project-tech">
-                                <span>.Net</span> • <span>C#</span> • <span>REST API</span>
+                        <img src="assets/images/project2.png" alt="Araç Takip Uygulaması">
+                        <div class="project-category">Desktop App</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Araç Takip Uygulaması</h3>
+                        <p class="project-description">Tek platformda tüm araçlarınızı takip edin. Gelişmiş harita entegrasyonu ve real-time tracking.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">.NET</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">WPF</span>
+                        </div>
+                        <div class="project-footer">
+                            <div class="project-status">
+                                <i class="fas fa-circle active"></i>
+                                <span>Aktif</span>
                             </div>
-                            <div class="project-links">
-                                <!-- <a href="#" class="project-link">Detaylar</a>
-                                <a href="#" class="project-link">İndir</a> -->
+                            <div class="project-arrow">
+                                <i class="fas fa-arrow-right"></i>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="project-card" onclick="openModal(5)">
+                <div class="project-card modern-card" onclick="openModal(5)">
                     <div class="project-image">
-                        <img src="assets/images/project55.png" alt="Kurumsal Web">
-                        <div class="project-overlay">
-                            <h3 class="project-title">Mağaza Ürün Otomasyonu</h3>
-                            <p class="project-description">Mağazalar için stok takibi, ürün yönetimi ve satış süreçlerini optimize eden kapsamlı bir otomasyon sistemi</p>
-                            <div class="project-tech">
-                                <span>HTML</span> • <span>Css</span> • <span>Bootstrap</span>
+                        <img src="assets/images/project55.png" alt="Mağaza Ürün Otomasyonu">
+                        <div class="project-category">Web App</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Mağaza Ürün Otomasyonu</h3>
+                        <p class="project-description">Stok takibi, ürün yönetimi ve satış süreçlerini optimize eden kapsamlı otomasyon sistemi.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">.NET</span>
+                            <span class="tech-tag">SQL</span>
+                        </div>
+                        <div class="project-footer">
+                            <div class="project-status">
+                                <i class="fas fa-circle completed"></i>
+                                <span>Tamamlandı</span>
                             </div>
-                            <div class="project-links">
-                                <!-- <a href="#" class="project-link">Detaylar</a> -->
-                                <!-- <a href="#" class="project-link">Ziyaret Et</a> -->
+                            <div class="project-arrow">
+                                <i class="fas fa-arrow-right"></i>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="project-card" onclick="openModal(3)">
+                <div class="project-card modern-card" onclick="openModal(3)">
                     <div class="project-image">
-                        <img src="assets/images/project3.png" alt="Eğitim Platformu">
-                        <div class="project-overlay">
-                            <h3 class="project-title">Araba Kiralama Sistemi</h3>
-                            <p class="project-description">Kullanıcıların araba kiralama hizmeti almalarını sağlayan bir platformdur.</p>
-                            <div class="project-tech">
-                                <span>.Net</span> • <span>c#</span> 
+                        <img src="assets/images/project3.png" alt="Araba Kiralama Sistemi">
+                        <div class="project-category">Web Platform</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Araba Kiralama Sistemi</h3>
+                        <p class="project-description">Kullanıcıların araba kiralama hizmeti almalarını sağlayan modern platform.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">.NET</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">MVC</span>
+                        </div>
+                        <div class="project-footer">
+                            <div class="project-status">
+                                <i class="fas fa-circle completed"></i>
+                                <span>Tamamlandı</span>
                             </div>
-                            <div class="project-links">
-                                <!-- <a href="#" class="project-link">Detaylar</a> -->
-                                <!-- <a href="#" class="project-link">Ziyaret Et</a> -->
+                            <div class="project-arrow">
+                                <i class="fas fa-arrow-right"></i>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="project-card" onclick="openModal(4)">
+                <div class="project-card modern-card" onclick="openModal(4)">
                     <div class="project-image">
                         <img src="assets/images/Project4.png" alt="Mağaza Ürün Otomasyonu">
-                        <div class="project-overlay">
-                            <h3 class="project-title">Mağaza Ürün </h3>
-                            <p class="project-description">Ürün yönetimi ve satış süreçlerini optimize eden kapsamlı bir otomasyon sistemi.</p>
-                            <div class="project-tech">
-                                <span>WPF</span> • <span>C#</span> • <span>SQLLite</span>
+                        <div class="project-category">Desktop App</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Mağaza Ürün Otomasyonu</h3>
+                        <p class="project-description">Ürün yönetimi ve satış süreçlerini optimize eden kapsamlı otomasyon sistemi.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">WPF</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">SQLite</span>
+                        </div>
+                        <div class="project-footer">
+                            <div class="project-status">
+                                <i class="fas fa-circle completed"></i>
+                                <span>Tamamlandı</span>
                             </div>
-                            <div class="project-links">
-                                <!-- <a href="#" class="project-link">Detaylar</a> -->
-                                <!-- <a href="#" class="project-link">Ziyaret Et</a> -->
+                            <div class="project-arrow">
+                                <i class="fas fa-arrow-right"></i>
                             </div>
                         </div>
                     </div>
                 </div>
-               
-                <div class="project-card" onclick="openModal(6)">
+
+                <div class="project-card modern-card" onclick="openModal(6)">
                     <div class="project-image">
                         <img src="assets/images/project6.png" alt="Kişsel Web Sitesi">
-                        <div class="project-overlay">
-                            <h3 class="project-title">Kişsel Web Sitesi</h3>
-                            <p class="project-description">Kapsamlı online eğitim ve kurs yönetim sistemi</p>
-                            <div class="project-tech">
-                                <span>Wordpress</span> • <span>Php</span>
+                        <div class="project-category">Website</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Kişsel Web Sitesi</h3>
+                        <p class="project-description">Modern tasarım ve kullanıcı deneyimi odaklı kişisel portföy sitesi.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">WordPress</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                        <div class="project-footer">
+                            <div class="project-status">
+                                <i class="fas fa-circle active"></i>
+                                <span>Aktif</span>
                             </div>
-                            <div class="project-links">
-                                <!-- <a href="#" class="project-link">Detaylar</a> -->
-                                <!-- <a href="#" class="project-link">Ziyaret Et</a> -->
+                            <div class="project-arrow">
+                                <i class="fas fa-arrow-right"></i>
                             </div>
                         </div>
                     </div>
@@ -378,112 +519,269 @@
             </div>
         </section>
 
-        <!-- Project Modal -->
+        <!-- Enhanced Project Modal -->
         <div class="modal" id="projectModal">
-            <div class="modal-content">
-                <!-- <button class="modal-close" onclick="closeModal()">&times;</button> -->
-                <div class="modal-slider">
-                    <div class="slider-container" id="sliderContainer">
-                        <!-- Images will be added dynamically -->
+            <div class="modal-backdrop" onclick="closeModal()"></div>
+            <div class="modal-container" onclick="event.stopPropagation()">
+                <button class="modal-close" onclick="closeModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+                
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <div class="modal-category" id="modalCategory">Web Application</div>
+                        <h2 class="modal-title" id="modalTitle">Project Title</h2>
+                        <div class="modal-status">
+                            <div class="status-indicator">
+                                <i class="fas fa-circle" id="modalStatusIcon"></i>
+                                <span id="modalStatus">Active</span>
+                            </div>
+                            <div class="modal-date" id="modalDate">2024</div>
+                        </div>
                     </div>
-                    <div class="slider-nav" id="sliderNav">
-                        <!-- Dots will be added dynamically -->
+
+                    <!-- Image Gallery -->
+                    <div class="modal-gallery">
+                        <div class="gallery-main">
+                            <div class="main-image-container">
+                                <img id="mainModalImage" src="" alt="Project Image">
+                                <div class="image-overlay">
+                                    <button class="fullscreen-btn" onclick="toggleFullscreen()">
+                                        <i class="fas fa-expand"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-thumbnails" id="galleryThumbnails">
+                            <!-- Thumbnails will be added dynamically -->
+                        </div>
                     </div>
-                    <button class="slider-button slider-prev" onclick="prevSlide()">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-                    <button class="slider-button slider-next" onclick="nextSlide()">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
-                </div>
-                <h2 class="modal-title" id="modalTitle"></h2>
-                <p class="modal-description" id="modalDescription"></p>
-                <div class="modal-tech" id="modalTech"></div>
-                <div class="project-links">
-                    <a href="#" class="project-link" id="modalDemo">Canlı Demo</a>
-                    <a href="#" class="project-link" id="modalGithub">GitHub</a>
+
+                    <!-- Project Details -->
+                    <div class="modal-details">
+                        <div class="details-left">
+                            <div class="modal-section">
+                                <h3 class="section-title">Proje Hakkında</h3>
+                                <p class="modal-description" id="modalDescription">Project description will be here...</p>
+                            </div>
+
+                            <div class="modal-section">
+                                <h3 class="section-title">Kullanılan Teknolojiler</h3>
+                                <div class="modal-tech" id="modalTech">
+                                    <!-- Tech tags will be added dynamically -->
+                                </div>
+                            </div>
+
+                            <div class="modal-section">
+                                <h3 class="section-title">Özellikler</h3>
+                                <ul class="feature-list" id="modalFeatures">
+                                    <!-- Features will be added dynamically -->
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="details-right">
+                            <div class="project-stats">
+                                <h3 class="section-title">Proje İstatistikleri</h3>
+                                <div class="stats-grid">
+                                    <div class="stat-item">
+                                        <i class="fas fa-code"></i>
+                                        <div class="stat-info">
+                                            <span class="stat-number" id="modalLines">15K+</span>
+                                            <span class="stat-label">Kod Satırı</span>
+                                        </div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <i class="fas fa-clock"></i>
+                                        <div class="stat-info">
+                                            <span class="stat-number" id="modalDuration">3 Ay</span>
+                                            <span class="stat-label">Geliştirme Süresi</span>
+                                        </div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <i class="fas fa-users"></i>
+                                        <div class="stat-info">
+                                            <span class="stat-number" id="modalUsers">500+</span>
+                                            <span class="stat-label">Kullanıcı</span>
+                                        </div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <i class="fas fa-star"></i>
+                                        <div class="stat-info">
+                                            <span class="stat-number" id="modalRating">4.8</span>
+                                            <span class="stat-label">Değerlendirme</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-actions">
+                                <h3 class="section-title">Proje Linkleri</h3>
+                                <div class="action-buttons">
+                                    <a href="#" class="action-btn primary" id="modalDemo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        <span>Canlı Demo</span>
+                                    </a>
+                                    <a href="#" class="action-btn secondary" id="modalGithub">
+                                        <i class="fab fa-github"></i>
+                                        <span>GitHub</span>
+                                    </a>
+                                    <button class="action-btn tertiary" onclick="shareProject()">
+                                        <i class="fas fa-share-alt"></i>
+                                        <span>Paylaş</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- Contact Section -->
+        <!-- Enhanced Contact Section -->
         <section id="contact" class="contact">
-            <h2 class="section-title">İletişim</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-info-item">
-                        <div class="contact-info-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-info-text">
-                            <h3>E-posta</h3>
-                            <p>burakskmn07@gmail.com</p>
-                        </div>
+            <div class="contact-background">
+                <div class="contact-shapes">
+                    <div class="contact-shape shape-1">
+                        <i class="fas fa-comments"></i>
                     </div>
-                    
-                    <div class="contact-info-item">
-                        <div class="contact-info-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-info-text">
-                            <h3>Konum</h3>
-                            <p>Antalya, Türkiye</p>
-                        </div>
+                    <div class="contact-shape shape-2">
+                        <i class="fas fa-paper-plane"></i>
                     </div>
-                    
-                    
+                   
+                </div>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-header">
+                    <h2 class="section-title">İletişime Geçin</h2>
+                    <p class="contact-subtitle">Projeleriniz için benimle iletişime geçin. Size en kısa sürede dönüş yapacağım.</p>
                 </div>
 
-                <div class="contact-divider">
-                    <span>Mesaj Gönder</span>
+                <div class="contact-content">
+                    <!-- Contact Info Cards -->
+                    <div class="contact-info-grid">
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-card-content">
+                                <h3>E-posta</h3>
+                                <p>burakskmn07@gmail.com</p>
+                                <a href="mailto:burakskmn07@gmail.com" class="contact-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>E-posta Gönder</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-card-content">
+                                <h3>Konum</h3>
+                                <p>Antalya, Türkiye</p>
+                                <div class="contact-link">
+                                    <i class="fas fa-clock"></i>
+                                    <span>GMT+3 Saat Dilimi</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-card-content">
+                                <h3>LinkedIn</h3>
+                                <p>Profesyonel Ağ</p>
+                                <a href="https://www.linkedin.com/in/burak-sekmen/" target="_blank" class="contact-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Profili Görüntüle</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-card-content">
+                                <h3>GitHub</h3>
+                                <p>Kod Deposu</p>
+                                <a href="https://github.com/BurakSekmenn" target="_blank" class="contact-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Projeleri İncele</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-container">
+                        <div class="form-header">
+                            <h3>Mesaj Gönderin</h3>
+                            <p>Proje fikirlerinizi benimle paylaşın</p>
+                        </div>
+
+                        <form class="modern-contact-form" onsubmit="sendEmail(event)">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Adınız</label>
+                                    <input type="text" id="name" name="name" required>
+                                    <div class="form-focus-line"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">E-posta Adresiniz</label>
+                                    <input type="email" id="email" name="email" required>
+                                    <div class="form-focus-line"></div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Konu</label>
+                                <input type="text" id="subject" name="subject" required>
+                                <div class="form-focus-line"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Mesajınız</label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                                <div class="form-focus-line"></div>
+                            </div>
+
+                            <button type="submit" class="modern-submit-btn">
+                                <span class="btn-text">
+                                    <i class="fas fa-paper-plane"></i>
+                                    Mesaj Gönder
+                                </span>
+                                <div class="btn-loading">
+                                    <i class="fas fa-spinner fa-spin"></i>
+                                    Gönderiliyor...
+                                </div>
+                            </button>
+                        </form>
+
+                        <div class="form-footer">
+                            <div class="response-time">
+                                <i class="fas fa-clock"></i>
+                                <span>Genellikle 24 saat içinde yanıtlarım</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                
-                <form class="contact-form" onsubmit="sendEmail(event)">
-                    <div class="form-group">
-                        <input type="text" placeholder="Adınız" id="name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="E-posta Adresiniz"  id="email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" placeholder="Konu" id="subject" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Mesajınız" id="message" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-button">
-                        <i class="fas fa-paper-plane"></i> Mesaj Gönder
-                    </button>
-                </form>
             </div>
         </section>
     </main>
 
-    <script>
-         // Theme Toggle Functionality
-        const themeToggle = document.getElementById('themeToggle');
+    <!-- Theme transition overlay -->
+    <div id="theme-transition-overlay" class="theme-transition-overlay"></div>
 
-            // Varsayılan olarak dark tema kullan
-            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-            const savedTheme = localStorage.getItem('theme');
-
-            // Tema belirleme
-            if (savedTheme) {
-                document.documentElement.setAttribute('data-theme', savedTheme);
-            } else {
-                document.documentElement.setAttribute('data-theme', 'dark'); // Default olarak dark ayarla
-                localStorage.setItem('theme', 'dark'); // Tarayıcıya kaydet
-            }
-
-            // Toggle theme
-            themeToggle.addEventListener('click', () => {
-                const currentTheme = document.documentElement.getAttribute('data-theme');
-                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-
-                document.documentElement.setAttribute('data-theme', newTheme);
-                localStorage.setItem('theme', newTheme);
-            });
-    </script>
+    <!-- Floating Particles Background -->
+    <div class="floating-particles" id="floating-particles"></div>
     <script src="script.js"></script>
 </body>
+
 </html>
