@@ -389,6 +389,20 @@ const projectData = {
         tech: ["Wordpress", "PHP", "MSSQL"],
         demo: "https://github.com/BurakSekmenn",
         github: "https://github.com/BurakSekmenn"
+    },
+    7: {
+        title: "Kullanıcı Dostu Fırın Lezzeti",
+        description: "Fırın Lezzeti - Taze, doğal ve el yapımı ekmek, pasta ve tatlı çeşitleri ile hizmetinizdeyiz. Fırından sofranıza sıcacık lezzetler.",
+        images: [
+            "assets/images/project7-4.png",
+            "assets/images/project7-1.png",
+            "assets/images/project7-2.png",
+            "assets/images/project7-3.png",
+
+        ],
+        tech: ["React", "Vite"],
+        demo: "https://firinsitesi.vercel.app/",
+        github: "https://github.com/BurakSekmenn"
     }
 };
 
