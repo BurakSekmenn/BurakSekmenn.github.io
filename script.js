@@ -391,8 +391,8 @@ const projectData = {
         github: "https://github.com/BurakSekmenn"
     },
     7: {
-        title: "Kullanıcı Dostu Fırın Lezzeti",
-        description: "Fırın Lezzeti - Taze, doğal ve el yapımı ekmek, pasta ve tatlı çeşitleri ile hizmetinizdeyiz. Fırından sofranıza sıcacık lezzetler.",
+        title: "Fırın Lezzeti: Dinamik Ürün Vitrini & Yönetim Paneli",
+        description: "Butik bir fırın işletmesi için geliştirilen, kategori bazlı ürün yönetim sistemi. Müşterilerin günlük taze ürünleri inceleyebileceği modern bir arayüz ve işletme sahibinin ürün/fiyat bilgilerini kolayca güncelleyebileceği özel bir CMS (İçerik Yönetim Sistemi) altyapısı içerir.",
         images: [
             "assets/images/project7-4.png",
             "assets/images/project7-1.png",
@@ -402,6 +402,21 @@ const projectData = {
         ],
         tech: ["React", "Vite"],
         demo: "https://firinsitesi.vercel.app/",
+        github: "https://github.com/BurakSekmenn"
+    },
+    8: {
+        title: "Gelişmiş Seyahat & Rezervasyon Yönetim Platformu",
+        description: "Karmaşık tur ve rezervasyon süreçlerini basitleştiren, modern bir web deneyimi. Müşterilerin hızlıca tur arayıp rezervasyon yapabildiği, acentanın ise tüm içerikleri teknik bilgi gerektirmeden yönetebildiği uçtan uca bir sistemdir. Performans ve kullanıcı deneyimi (UX) ön planda tutularak geliştirilmiştir. Fırından sofranıza sıcacık lezzetler.",
+        images: [
+            "assets/images/project8.png",
+            "assets/images/project8-1.png",
+            "assets/images/project8-2.png",
+            "assets/images/project8-3.png",
+            "assets/images/project8-4.png",
+
+        ],
+        tech: ["React", "tailwind","Postgresql"],
+        demo: "https://seyahat.vercel.app/",
         github: "https://github.com/BurakSekmenn"
     }
 };
@@ -432,7 +447,7 @@ function openModal(projectId) {
         statusText.textContent = 'Tamamlandı';
     }
 
-    document.getElementById('modalDate').textContent = '2024';
+    document.getElementById('modalDate').textContent = '2025';
 
     // Update main image and thumbnails
     const mainImage = document.getElementById('mainModalImage');

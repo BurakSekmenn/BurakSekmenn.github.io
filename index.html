@@ -64,7 +64,7 @@
         <section id="home" class="hero">
             <!-- Interactive Particles Canvas -->
             <canvas id="particlesCanvas" class="particles-canvas"></canvas>
-            
+
             <div class="shapes">
                 <div class="shape shape1"></div>
                 <div class="shape shape2"></div>
@@ -73,7 +73,7 @@
                 <div class="shape shape5"></div>
                 <div class="shape shape6"></div>
             </div>
-            
+
             <!-- Animated Tech Icons -->
             <div class="tech-icons">
                 <div class="tech-icon icon1" data-tech=".NET">
@@ -339,7 +339,7 @@
                 <h2 class="section-title">Projelerim</h2>
                 <p class="projects-subtitle">Geliştirdiğim projeler ve çözümler</p>
             </div>
-            
+
             <!-- Featured Project -->
             <div class="featured-project" onclick="openModal(1)">
                 <div class="featured-image">
@@ -352,7 +352,9 @@
                 <div class="featured-content">
                     <div class="featured-category">Web Uygulaması</div>
                     <h3 class="featured-title">Rezervasyon Sistemi</h3>
-                    <p class="featured-description">Kullanıcıların belirli tarihlerde ve saatlerde hizmet almalarını sağlayan kapsamlı bir platform. Modern UI/UX tasarımı ile geliştirilmiş, ölçeklenebilir mimari yapısına sahip.</p>
+                    <p class="featured-description">Kullanıcıların belirli tarihlerde ve saatlerde hizmet almalarını
+                        sağlayan kapsamlı bir platform. Modern UI/UX tasarımı ile geliştirilmiş, ölçeklenebilir mimari
+                        yapısına sahip.</p>
                     <div class="featured-tech">
                         <span class="tech-tag">.NET Core</span>
                         <span class="tech-tag">React</span>
@@ -377,35 +379,49 @@
             </div>
 
             <div class="projects-grid">
-                <div class="project-card" onclick="openModal(1)">
+
+                <div class="project-card modern-card" onclick="openModal(8)">
                     <div class="project-image">
-                        <img src="assets/images/project1.png" alt="E-Ticaret Projesi">
-                        <div class="project-overlay">
-                            <h3 class="project-title">Rezervasyon Sistemi</h3>
-                            <p class="project-description">Kullanıcıların belirli tarihlerde ve saatlerde hizmet
-                                almalarını sağlayan bir platformdur.</p>
-                            <div class="project-tech">
-                                <span>.Net</span> • <span>Css</span> • <span>Mysql</span>
+                        <img src="assets/images/project8.png" alt="Kişsel Web Sitesi">
+                        <div class="project-category">Web Site</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Gelişmiş Seyahat & Rezervasyon Yönetim Platformu</h3>
+                        <p class="project-description">Karmaşık tur ve rezervasyon süreçlerini basitleştiren, modern bir
+                            web deneyimi. Müşterilerin hızlıca tur arayıp rezervasyon yapabildiği, acentanın ise tüm
+                            içerikleri teknik bilgi gerektirmeden yönetebildiği uçtan uca bir sistemdir. Performans ve
+                            kullanıcı deneyimi (UX) ön planda tutularak geliştirilmiştir.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Vite</span>
+
+                        </div>
+                        <div class="project-footer">
+                            <div class="project-status">
+                                <i class="fas fa-circle active"></i>
+                                <span>Aktif</span>
                             </div>
-                            <div class="project-links">
-                                <!-- <a href="#" class="project-link">Detaylar</a> -->
-                                <!-- <a href="#" class="project-link">Demo</a> -->
+                            <div class="project-arrow">
+                                <i class="fas fa-arrow-right"></i>
                             </div>
                         </div>
                     </div>
                 </div>
-                   <div class="project-card modern-card" onclick="openModal(7)">
+                <div class="project-card modern-card" onclick="openModal(7)">
                     <div class="project-image">
                         <img src="assets/images/project7.png" alt="Kişsel Web Sitesi">
                         <div class="project-category">Web Site</div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Fırın Lezzeti</h3>
-                        <p class="project-description">Modern tasarım ve kullanıcı deneyimi odaklı kişisel portföy sitesi.</p>
+                        <h3 class="project-title">Fırın Lezzeti: Dinamik Ürün Vitrini & Yönetim Paneli</h3>
+                        <p class="project-description">Butik bir fırın işletmesi için geliştirilen, kategori bazlı ürün
+                            yönetim sistemi. Müşterilerin günlük taze ürünleri inceleyebileceği modern bir arayüz ve
+                            işletme sahibinin ürün/fiyat bilgilerini kolayca güncelleyebileceği özel bir CMS (İçerik
+                            Yönetim Sistemi) altyapısı içerir.</p>
                         <div class="project-tech">
                             <span class="tech-tag">React</span>
                             <span class="tech-tag">Vite</span>
-                            
+
                         </div>
                         <div class="project-footer">
                             <div class="project-status">
@@ -425,7 +441,8 @@
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Araç Takip Uygulaması</h3>
-                        <p class="project-description">Tek platformda tüm araçlarınızı takip edin. Gelişmiş harita entegrasyonu ve real-time tracking.</p>
+                        <p class="project-description">Tek platformda tüm araçlarınızı takip edin. Gelişmiş harita
+                            entegrasyonu ve real-time tracking.</p>
                         <div class="project-tech">
                             <span class="tech-tag">.NET</span>
                             <span class="tech-tag">C#</span>
@@ -449,7 +466,8 @@
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Mağaza Ürün Otomasyonu</h3>
-                        <p class="project-description">Stok takibi, ürün yönetimi ve satış süreçlerini optimize eden kapsamlı otomasyon sistemi.</p>
+                        <p class="project-description">Stok takibi, ürün yönetimi ve satış süreçlerini optimize eden
+                            kapsamlı otomasyon sistemi.</p>
                         <div class="project-tech">
                             <span class="tech-tag">React</span>
                             <span class="tech-tag">.NET</span>
@@ -469,11 +487,12 @@
                 <div class="project-card modern-card" onclick="openModal(3)">
                     <div class="project-image">
                         <img src="assets/images/project3.png" alt="Araba Kiralama Sistemi">
-                        <div class="project-category">Web Platform</div>
+                        <div class="project-category">Web Site</div>
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Araba Kiralama Sistemi</h3>
-                        <p class="project-description">Kullanıcıların araba kiralama hizmeti almalarını sağlayan modern platform.</p>
+                        <p class="project-description">Kullanıcıların araba kiralama hizmeti almalarını sağlayan modern
+                            platform.</p>
                         <div class="project-tech">
                             <span class="tech-tag">.NET</span>
                             <span class="tech-tag">C#</span>
@@ -497,7 +516,8 @@
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Mağaza Ürün Otomasyonu</h3>
-                        <p class="project-description">Ürün yönetimi ve satış süreçlerini optimize eden kapsamlı otomasyon sistemi.</p>
+                        <p class="project-description">Ürün yönetimi ve satış süreçlerini optimize eden kapsamlı
+                            otomasyon sistemi.</p>
                         <div class="project-tech">
                             <span class="tech-tag">WPF</span>
                             <span class="tech-tag">C#</span>
@@ -518,11 +538,12 @@
                 <div class="project-card modern-card" onclick="openModal(6)">
                     <div class="project-image">
                         <img src="assets/images/project6.png" alt="Kişsel Web Sitesi">
-                        <div class="project-category">Website</div>
+                        <div class="project-category">Web Site</div>
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Kişsel Web Sitesi</h3>
-                        <p class="project-description">Modern tasarım ve kullanıcı deneyimi odaklı kişisel portföy sitesi.</p>
+                        <p class="project-description">Modern tasarım ve kullanıcı deneyimi odaklı kişisel portföy
+                            sitesi.</p>
                         <div class="project-tech">
                             <span class="tech-tag">WordPress</span>
                             <span class="tech-tag">PHP</span>
@@ -540,7 +561,7 @@
                     </div>
                 </div>
 
-               
+
             </div>
         </section>
 
@@ -551,7 +572,7 @@
                 <button class="modal-close" onclick="closeModal()">
                     <i class="fas fa-times"></i>
                 </button>
-                
+
                 <div class="modal-content">
                     <!-- Modal Header -->
                     <div class="modal-header">
@@ -588,7 +609,8 @@
                         <div class="details-left">
                             <div class="modal-section">
                                 <h3 class="section-title">Proje Hakkında</h3>
-                                <p class="modal-description" id="modalDescription">Project description will be here...</p>
+                                <p class="modal-description" id="modalDescription">Project description will be here...
+                                </p>
                             </div>
 
                             <div class="modal-section">
@@ -674,14 +696,15 @@
                     <div class="contact-shape shape-2">
                         <i class="fas fa-paper-plane"></i>
                     </div>
-                   
+
                 </div>
             </div>
-            
+
             <div class="contact-container">
                 <div class="contact-header">
                     <h2 class="section-title">İletişime Geçin</h2>
-                    <p class="contact-subtitle">Projeleriniz için benimle iletişime geçin. Size en kısa sürede dönüş yapacağım.</p>
+                    <p class="contact-subtitle">Projeleriniz için benimle iletişime geçin. Size en kısa sürede dönüş
+                        yapacağım.</p>
                 </div>
 
                 <div class="contact-content">
@@ -722,7 +745,8 @@
                             <div class="contact-card-content">
                                 <h3>LinkedIn</h3>
                                 <p>Profesyonel Ağ</p>
-                                <a href="https://www.linkedin.com/in/burak-sekmen/" target="_blank" class="contact-link">
+                                <a href="https://www.linkedin.com/in/burak-sekmen/" target="_blank"
+                                    class="contact-link">
                                     <i class="fas fa-external-link-alt"></i>
                                     <span>Profili Görüntüle</span>
                                 </a>
