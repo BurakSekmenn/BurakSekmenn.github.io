@@ -415,8 +415,23 @@ const projectData = {
             "assets/images/project8-4.png",
 
         ],
-        tech: ["React", "tailwind","Postgresql"],
+        tech: ["React", "tailwind", "Postgresql"],
         demo: "https://seyahat.vercel.app/",
+        github: "https://github.com/BurakSekmenn"
+    },
+    9: {
+        title: "Antalya Çekici & Yol Yardım Platformu",
+        description: "Antalya'nın her noktasına 7/24 hizmet veren, modern ve kullanıcı dostu arayüze sahip profesyonel çekici platformu. React altyapısı ile güçlendirilen bu proje, mükemmel UI/UX deneyimi sunarak yolda kalan sürücülerin saniyeler içinde yardım çağırmasını sağlar. Stratejik CTA (Harekete Geçirici Mesaj) yerleşimleri ve mobil uyumlu tasarımı ile acil durumlarda maksimum erişilebilirlik hedeflenmiştir.",
+        images: [
+            "assets/images/project9.png",
+            "assets/images/project9-1.png",
+            "assets/images/project9-2.png",
+            "assets/images/project9-3.png",
+            "assets/images/project9-4.png",
+            "assets/images/project9-logo.png",
+        ],
+        tech: ["React", "UI/UX", "Responsive Design"],
+        demo: "https://kadir-oto-sitesi-ongosterim.vercel.app/",
         github: "https://github.com/BurakSekmenn"
     }
 };
@@ -515,7 +530,8 @@ function getProjectCategory(projectId) {
         3: 'Web Platform',
         4: 'Desktop Application',
         5: 'Web Application',
-        6: 'Website'
+        6: 'Website',
+        9: 'Kurumsal Web Platformu',
     };
     return categories[projectId] || 'Project';
 }
@@ -563,6 +579,13 @@ function getProjectFeatures(projectId) {
             'Hızlı yükleme',
             'Mobil uyumlu',
             'İçerik yönetimi'
+        ],
+        9: [
+            '7/24 Yol Yardım Desteği',
+            'Hızlı Arama Entegrasyonu',
+            'Konum Bazlı Hizmet',
+            'Mobil Öncelikli Tasarım',
+            'Gelişmiş UX/UI Deneyimi'
         ]
     };
     return features[projectId] || ['Modern tasarım', 'Kullanıcı dostu', 'Responsive'];
@@ -575,7 +598,8 @@ function getProjectStats(projectId) {
         3: { lines: '18K+', duration: '4 Ay', users: '300+', rating: '4.7' },
         4: { lines: '10K+', duration: '2 Ay', users: '150+', rating: '4.5' },
         5: { lines: '20K+', duration: '5 Ay', users: '800+', rating: '4.9' },
-        6: { lines: '5K+', duration: '1 Ay', users: '1K+', rating: '4.4' }
+        6: { lines: '5K+', duration: '1 Ay', users: '1K+', rating: '4.4' },
+        9: { lines: '3K+', duration: '2 Hafta', users: 'Aktif', rating: '5.0' }
     };
     return stats[projectId] || { lines: '10K+', duration: '2 Ay', users: '100+', rating: '4.5' };
 }
