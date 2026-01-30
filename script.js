@@ -431,7 +431,7 @@ const projectData = {
             "assets/images/project9-logo.png",
         ],
         tech: ["React", "UI/UX", "Responsive Design"],
-        demo: "https://kadir-oto-sitesi-ongosterim.vercel.app/",
+        demo: "https://antalyaacarotocekici.com/",
         github: "https://github.com/BurakSekmenn"
     }
 };
